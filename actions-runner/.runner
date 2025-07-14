@@ -1,0 +1,11 @@
+﻿{
+  "agentId": 21,
+  "agentName": "QXL07329525",
+  "poolId": 1,
+  "poolName": "Default",
+  "serverUrl": "https://pipelinesghubeus5.actions.githubusercontent.com/xd1r2ess98KCa9Pw7pyaC8cVfNt0HvgYw2QnmtLLKnx0VeL1wP/",
+  "gitHubUrl": "https://github.com/SasiKonatham/course-gh-actions",
+  "workFolder": "./run.sh",
+  "useV2Flow": true,
+  "serverUrlV2": "https://broker.actions.githubusercontent.com/"
+}
