@@ -2,7 +2,7 @@ name: thanksJob
 
 on: 
   issues:
-    types: opened
+    types: [opened]
   workflow_dispatch: #manual
 
 jobs:
@@ -30,7 +30,8 @@ jobs:
 
             //create comment thanking contributor
 
-            const comment = await github.rest.issues.createComment({repo,owner,issue_number,body: 
+            const comment = await github.rest.issues.createComment
+            ({repo,owner,issue_number,body: 
             "Thanks for your contributions!!!"});
 
             console.log(`comment id: ${comment.data.id}`)
@@ -44,7 +45,7 @@ jobs:
             return comment.data.id;
 
 
-      - run: echo 'comment id=${{ steps.issue_script.outputs.result }}'
+      - run: echo "comment id=${{ steps.issue_script.outputs.result }}"
 
         
 
