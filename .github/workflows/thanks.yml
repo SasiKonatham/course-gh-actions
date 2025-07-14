@@ -1,4 +1,4 @@
-name: thanks
+name: thanksJob
 
 on: 
   issues:
@@ -8,7 +8,7 @@ on:
 jobs:
   thanks:
     runs-on: ubuntu-latest
-    #These perms are used to gen token ${{ secrets.GITHUB_TOKEN }}
+    #These perms are used to gen token ${{ secrets.GITHUB_TOKEN }}   
     permissions: 
       issues: write
     steps:
